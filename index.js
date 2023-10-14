@@ -25,46 +25,79 @@
 // dz 3
 
     //  ex1
-let str = "aaa@bbb@ccc"
+// let str = "aaa@bbb@ccc"
 
-str = str.split('@').join('!')
+// str = str.split('@').join('!')
 
-console.log(str)
-
-
-    // ex2
-let helloWorld = "HELLOWORLD"
-
-helloWorld = helloWorld.charAt() + helloWorld.slice(1, 5).toLowerCase() + " " + helloWorld.slice(5).toLowerCase()
-
-console.log(helloWorld)
+// console.log(str)
 
 
-    // ex3
+//     // ex2
+// let helloWorld = "HELLOWORLD"
 
-let js = "Hello, it is HTML"
+// helloWorld = helloWorld.charAt() + helloWorld.slice(1, 5).toLowerCase() + " " + helloWorld.slice(5).toLowerCase()
 
-js = js.split('HTML').join('not JS')
+// console.log(helloWorld)
 
-console.log(js)
+
+//     // ex3
+
+// let js = "Hello, it is HTML"
+
+// js = js.split('HTML').join('not JS')
+
+// console.log(js)
 
    
-    // ex4
+//     // ex4
 
-let ex4 = `let a = 'alex'`
+// let ex4 = `let a = 'alex'`
 
-ex4 = ex4.charAt().toUpperCase() + ex4.slice(1)
+// ex4 = ex4.charAt().toUpperCase() + ex4.slice(1)
 
-console.log(ex4)
-
-
-    // ex 5
+// console.log(ex4)
 
 
-    // ex6
+//     // ex 5
 
-let alex = "Lex Luter has a big suit"
 
-alex = alex.slice(alex.search('a'), alex.search('a') + 1).toUpperCase() + alex.slice(alex.search('Lex'), alex.search('Lex') + 3)
+//     // ex6
 
-console.log(alex)
+// let alex = "Lex Luter has a big suit"
+
+// alex = alex.slice(alex.search('a'), alex.search('a') + 1).toUpperCase() + alex.slice(alex.search('Lex'), alex.search('Lex') + 3)
+
+// console.log(alex)
+
+
+
+
+// 14.10.23
+    // ex1
+let nameChet = prompt('Введите ваше имя!')
+
+if(nameChet.length % 2 === 0) {
+    alert('Добро Пожаловать!')
+} else {
+    alert('НЕТ, кто вам дал нечетное имя?')
+}
+
+   
+    // ex2
+let numChet = prompt('Введите число!')
+
+if(numChet % 2 === 0) {
+    alert('Четное!')
+} else {
+    alert('Нечетное!')
+}
+
+    
+    // ex3
+let nameCheck = prompt('Введите имя!')
+
+if(nameCheck.charAt() === 'A' || nameCheck.charAt() === 'a') {
+    alert('Добро Пожаловать!')
+} else {
+    alert('Нельзя! Имя должно начинаться на А/а')
+}
