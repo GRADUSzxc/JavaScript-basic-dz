@@ -74,30 +74,82 @@
 
 // 14.10.23
     // ex1
-let nameChet = prompt('Введите ваше имя!')
+// let nameChet = prompt('Введите ваше имя!')
 
-if(nameChet.length % 2 === 0) {
-    alert('Добро Пожаловать!')
-} else {
-    alert('НЕТ, кто вам дал нечетное имя?')
-}
+// if(nameChet.length % 2 === 0) {
+//     alert('Добро Пожаловать!')
+// } else {
+//     alert('НЕТ, кто вам дал нечетное имя?')
+// }
 
    
-    // ex2
-let numChet = prompt('Введите число!')
+//     // ex2
+// let numChet = prompt('Введите число!')
 
-if(numChet % 2 === 0) {
-    alert('Четное!')
-} else {
-    alert('Нечетное!')
-}
+// if(numChet % 2 === 0) {
+//     alert('Четное!')
+// } else {
+//     alert('Нечетное!')
+// }
 
     
-    // ex3
-let nameCheck = prompt('Введите имя!')
+//     // ex3
+// let nameCheck = prompt('Введите имя!')
 
-if(nameCheck.charAt() === 'A' || nameCheck.charAt() === 'a') {
-    alert('Добро Пожаловать!')
+// if(nameCheck.charAt() === 'A' || nameCheck.charAt() === 'a') {
+//     alert('Добро Пожаловать!')
+// } else {
+//     alert('Нельзя! Имя должно начинаться на А/а')
+// }
+
+
+
+// 18.10.23
+    // ex 1
+let name = 'alex'
+let money = 10000
+let account = 7777
+
+let namePr = prompt('Your name').toLowerCase().trim()
+
+if(namePr === name) {
+    alert('success')
 } else {
-    alert('Нельзя! Имя должно начинаться на А/а')
+    alert('user undefined')
 }
+
+let accountPr = +prompt('account number?')
+
+if(accountPr === account) {
+    alert('success')
+} else {
+    alert('wrong account')
+}
+
+let moneyPr = prompt('how much to cash out?')
+
+if(moneyPr >=1 && moneyPr <=10000) {
+    alert('success')
+} else {
+    alert('not enough money')
+}
+
+
+    // ex 2 
+let capacity = 10
+let filled = 6
+alert('6 filled')
+
+let clubName = prompt('your name').toLowerCase().trim()
+let age = +prompt('how old are u?')
+let clubMoney = +prompt('how much money do you have')
+let persons = prompt('how many persons?')
+
+if(clubName.charAt() === 'a' &&
+ age >=20 && age <=40 &&
+ clubMoney >= 100 &&
+ persons <=4) {
+    alert('welcome')
+ } else {
+    alert('sorry, we cant let you into the club ')
+ }
