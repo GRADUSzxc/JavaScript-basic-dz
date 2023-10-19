@@ -133,6 +133,8 @@ if(moneyPr >=1 && moneyPr <=10000) {
 } else {
     alert('not enough money')
 }
+alert(moneyPr + " " + "Снято")
+alert(money - moneyPr + " " + "Осталось")
 
 
     // ex 2 
