@@ -106,52 +106,76 @@
 
 // 18.10.23
     // ex 1
-let name = 'alex'
-let money = 10000
-let account = 7777
+// let name = 'alex'
+// let money = 10000
+// let account = 7777
 
-let namePr = prompt('Your name').toLowerCase().trim()
+// let namePr = prompt('Your name').toLowerCase().trim()
 
-if(namePr === name) {
-    alert('success')
-} else {
-    alert('user undefined')
-}
+// if(namePr === name) {
+//     alert('success')
+// } else {
+//     alert('user undefined')
+// }
 
-let accountPr = +prompt('account number?')
+// let accountPr = +prompt('account number?')
 
-if(accountPr === account) {
-    alert('success')
-} else {
-    alert('wrong account')
-}
+// if(accountPr === account) {
+//     alert('success')
+// } else {
+//     alert('wrong account')
+// }
 
-let moneyPr = prompt('how much to cash out?')
+// let moneyPr = prompt('how much to cash out?')
 
-if(moneyPr >=1 && moneyPr <=10000) {
-    alert('success')
-} else {
-    alert('not enough money')
-}
-alert(moneyPr + " " + "Снято")
-alert(money - moneyPr + " " + "Осталось")
+// if(moneyPr >=1 && moneyPr <=10000) {
+//     alert('success')
+// } else {
+//     alert('not enough money')
+// }
+// alert(moneyPr + " " + "Снято")
+// alert(money - moneyPr + " " + "Осталось")
 
 
-    // ex 2 
-let capacity = 10
-let filled = 6
-alert('6 filled')
+//     // ex 2 
+// let capacity = 10
+// let filled = 6
+// alert('6 filled')
 
-let clubName = prompt('your name').toLowerCase().trim()
-let age = +prompt('how old are u?')
-let clubMoney = +prompt('how much money do you have')
-let persons = prompt('how many persons?')
+// let clubName = prompt('your name').toLowerCase().trim()
+// let age = +prompt('how old are u?')
+// let clubMoney = +prompt('how much money do you have')
+// let persons = prompt('how many persons?')
 
-if(clubName.charAt() === 'a' &&
- age >=20 && age <=40 &&
- clubMoney >= 100 &&
- persons <=4) {
-    alert('welcome')
- } else {
-    alert('sorry, we cant let you into the club ')
- }
+// if(clubName.charAt() === 'a' &&
+//  age >=20 && age <=40 &&
+//  clubMoney >= 100 &&
+//  persons <=4) {
+//     alert('welcome')
+//  } else {
+//     alert('sorry, we cant let you into the club ')
+//  }
+
+// 22.10.23
+    // ex1
+let arr = ['alex', 'jordan', 'michael', 'amira', 'dilruh', 'alla', 'tangir', 'daler']
+
+let evenNames = arr.filter((name) => name.length % 2 === 0)
+let oddNames = arr.filter((name) => name.length % 2 !== 0)
+
+console.log(evenNames)
+console.log(oddNames)
+
+
+    // ex2
+let nums = [1,2,3,4,5,6,7,9]
+
+let evenNums = []
+let oddNums = []
+
+evenNums.push(nums.filter((num) => num % 2 === 0))
+oddNums.push(nums.filter((num) => num % 2 !== 0))
+
+console.log(evenNums)
+console.log(oddNums)
+
