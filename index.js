@@ -158,24 +158,34 @@
 
 // 22.10.23
     // ex1
-let arr = ['alex', 'jordan', 'michael', 'amira', 'dilruh', 'alla', 'tangir', 'daler']
+// let arr = ['alex', 'jordan', 'michael', 'amira', 'dilruh', 'alla', 'tangir', 'daler']
 
-let evenNames = arr.filter((name) => name.length % 2 === 0)
-let oddNames = arr.filter((name) => name.length % 2 !== 0)
+// let evenNames = arr.filter((name) => name.length % 2 === 0)
+// let oddNames = arr.filter((name) => name.length % 2 !== 0)
 
-console.log(evenNames)
-console.log(oddNames)
+// console.log(evenNames)
+// console.log(oddNames)
 
 
-    // ex2
-let nums = [1,2,3,4,5,6,7,9]
+//     // ex2
+// let nums = [1,2,3,4,5,6,7,9]
 
-let evenNums = []
-let oddNums = []
+// let evenNums = []
+// let oddNums = []
 
-evenNums.push(nums.filter((num) => num % 2 === 0))
-oddNums.push(nums.filter((num) => num % 2 !== 0))
+// evenNums.push(nums.filter((num) => num % 2 === 0))
+// oddNums.push(nums.filter((num) => num % 2 !== 0))
 
-console.log(evenNums)
-console.log(oddNums)
+// console.log(evenNums)
+// console.log(oddNums)
+
+// 25.10.23
+    // ex1
+let arr = ['hello', 1234, '', false, NaN, 123, true, ' ', null]
+
+let trueElems = [arr.filter((elem => {
+    return Boolean(elem)
+}))]
+
+console.log(trueElems)
 
