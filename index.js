@@ -24,7 +24,7 @@
 
 // dz 3
 
-    //  ex1
+//  ex1
 // let str = "aaa@bbb@ccc"
 
 // str = str.split('@').join('!')
@@ -48,7 +48,7 @@
 
 // console.log(js)
 
-   
+
 //     // ex4
 
 // let ex4 = `let a = 'alex'`
@@ -73,7 +73,7 @@
 
 
 // 14.10.23
-    // ex1
+// ex1
 // let nameChet = prompt('Введите ваше имя!')
 
 // if(nameChet.length % 2 === 0) {
@@ -82,7 +82,7 @@
 //     alert('НЕТ, кто вам дал нечетное имя?')
 // }
 
-   
+
 //     // ex2
 // let numChet = prompt('Введите число!')
 
@@ -92,7 +92,7 @@
 //     alert('Нечетное!')
 // }
 
-    
+
 //     // ex3
 // let nameCheck = prompt('Введите имя!')
 
@@ -105,7 +105,7 @@
 
 
 // 18.10.23
-    // ex 1
+// ex 1
 // let name = 'alex'
 // let money = 10000
 // let account = 7777
@@ -157,7 +157,7 @@
 //  }
 
 // 22.10.23
-    // ex1
+// ex1
 // let arr = ['alex', 'jordan', 'michael', 'amira', 'dilruh', 'alla', 'tangir', 'daler']
 
 // let evenNames = arr.filter((name) => name.length % 2 === 0)
@@ -167,7 +167,7 @@
 // console.log(oddNames)
 
 
-//     // ex2
+     // ex2
 // let nums = [1,2,3,4,5,6,7,9]
 
 // let evenNums = []
@@ -180,12 +180,72 @@
 // console.log(oddNums)
 
 // 25.10.23
-    // ex1
-let arr = ['hello', 1234, '', false, NaN, 123, true, ' ', null]
+// ex1
+// let arr = ['hello', 1234, '', false, NaN, 123, true, ' ', null]
 
-let trueElems = [arr.filter((elem => {
-    return Boolean(elem)
-}))]
+// let trueElems = [arr.filter((elem => {
+//     return Boolean(elem)
+// }))]
 
-console.log(trueElems)
+// console.log(trueElems)
+
+
+
+
+// 26.10.23
+// ex1
+let cs2 = {
+    name: "Counter-Strike 2",
+    date: 2023,
+    age: "1 month",
+    engine: "Source 2",
+    systemRequirements: {
+        CPU: "Intel® Core™ i5-7500 / AMD Ryzen 5 1600.",
+        GPU: "NVIDIA® GeForce® GTX 1650 4 ГБ / AMD Radeon RX 580.",
+        RAM: "12 GB",
+        OS: "windows 10/11 64-bit",
+        MEMORY: "85 GB"
+    },
+    developer: "VALVE"
+}
+
+let miniObj = {
+    privet: "privet",
+    kakDela: "kak dela?",
+    chtoDelaesh: "cho delaesh?",
+    choEl: {
+        kashu: "kashu",
+        plov: "plov"
+    }
+}
+
+let newObj = Object.assign({}, cs2, miniObj)
+
+let newObjKeys = Object.keys(newObj)
+let newObjValue = Object.values(newObj)//.concat(newObjKeys)
+
+let KeyValConcat = newObjKeys.concat(newObjValue)
+
+let types = {
+    string: [],
+    number: [],
+    object: [],
+    boolean: []
+}
+
+KeyValConcat.filter((elem) => {
+    if(typeof elem === 'string') {
+        types.string.push(elem)
+    } else if(typeof elem === 'number') {
+        types.number.push(elem)
+    } else if(typeof elem === 'object') {
+        types.object.push(elem)
+    } else if(typeof elem === 'boolean') {
+        types.boolean.push(elem)
+    } 
+})
+
+console.log(types)
+
+
 
