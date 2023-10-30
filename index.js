@@ -194,58 +194,128 @@
 
 // 26.10.23
 // ex1
-let cs2 = {
-    name: "Counter-Strike 2",
-    date: 2023,
-    age: "1 month",
-    engine: "Source 2",
-    systemRequirements: {
-        CPU: "Intel® Core™ i5-7500 / AMD Ryzen 5 1600.",
-        GPU: "NVIDIA® GeForce® GTX 1650 4 ГБ / AMD Radeon RX 580.",
-        RAM: "12 GB",
-        OS: "windows 10/11 64-bit",
-        MEMORY: "85 GB"
+// let cs2 = {
+//     name: "Counter-Strike 2",
+//     date: 2023,
+//     age: "1 month",
+//     engine: "Source 2",
+//     systemRequirements: {
+//         CPU: "Intel® Core™ i5-7500 / AMD Ryzen 5 1600.",
+//         GPU: "NVIDIA® GeForce® GTX 1650 4 ГБ / AMD Radeon RX 580.",
+//         RAM: "12 GB",
+//         OS: "windows 10/11 64-bit",
+//         MEMORY: "85 GB"
+//     },
+//     developer: "VALVE"
+// }
+
+// let miniObj = {
+//     privet: "privet",
+//     kakDela: "kak dela?",
+//     chtoDelaesh: "cho delaesh?",
+//     choEl: {
+//         kashu: "kashu",
+//         plov: "plov"
+//     }
+// }
+
+// let newObj = Object.assign({}, cs2, miniObj)
+
+// let newObjKeys = Object.keys(newObj)
+// let newObjValue = Object.values(newObj)//.concat(newObjKeys)
+
+// let KeyValConcat = newObjKeys.concat(newObjValue)
+
+// let types = {
+//     string: [],
+//     number: [],
+//     object: [],
+//     boolean: []
+// }
+
+// KeyValConcat.filter((elem) => {
+//     if(typeof elem === 'string') {
+//         types.string.push(elem)
+//     } else if(typeof elem === 'number') {
+//         types.number.push(elem)
+//     } else if(typeof elem === 'object') {
+//         types.object.push(elem)
+//     } else if(typeof elem === 'boolean') {
+//         types.boolean.push(elem)
+//     } 
+// })
+
+// console.log(types)
+
+
+
+//30.10.23
+    //ex1
+
+let team = [
+    {
+        name: 'Gradus',
+        age: 14,
+        role: 'tank',
+        isMarried: false
     },
-    developer: "VALVE"
-}
 
-let miniObj = {
-    privet: "privet",
-    kakDela: "kak dela?",
-    chtoDelaesh: "cho delaesh?",
-    choEl: {
-        kashu: "kashu",
-        plov: "plov"
+    {
+        name: 'W1nn1e',
+        age: 15,
+        role: 'damage',
+        isMarried: true
+    },
+
+    {
+        name: 'Paradoxx',
+        age: 15,
+        role: 'damage',
+        isMarried: true
+    },
+
+    {
+        name: 'Fl1kyyy',
+        age: 14,
+        role: 'support',
+        isMarried: false
+    },
+
+    {
+        name: 'Marshmellouto',
+        age: 15,
+        role: 'support',
+        isMarried: false
+        
     }
-}
+]
+console.log(team)
 
-let newObj = Object.assign({}, cs2, miniObj)
+    // ex2
+let averageAge = 0
 
-let newObjKeys = Object.keys(newObj)
-let newObjValue = Object.values(newObj)//.concat(newObjKeys)
-
-let KeyValConcat = newObjKeys.concat(newObjValue)
-
-let types = {
-    string: [],
-    number: [],
-    object: [],
-    boolean: []
-}
-
-KeyValConcat.filter((elem) => {
-    if(typeof elem === 'string') {
-        types.string.push(elem)
-    } else if(typeof elem === 'number') {
-        types.number.push(elem)
-    } else if(typeof elem === 'object') {
-        types.object.push(elem)
-    } else if(typeof elem === 'boolean') {
-        types.boolean.push(elem)
-    } 
+team.forEach(player => {
+    averageAge += player.age
 })
 
-console.log(types)
+averageAge = averageAge / team.length
+
+console.log('average age =', averageAge)
+
+    // ex3
+let Married = []
+let Solo = []
+
+team.forEach(player => {
+    if(player.isMarried === true) {
+        Married.push(player)
+    } else {
+        Solo.push(player)
+    }
+})
+
+console.log('Married:', Married)
+console.log('Solo:', Solo)
 
 
 
