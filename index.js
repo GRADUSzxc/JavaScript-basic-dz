@@ -621,7 +621,7 @@
         if (paying == findedCar.price) {
             alert('Поздравляем с покупкой!')
         } else if (paying < findedCar.price) {
-            alert('Не верная сумма!')
+            alert(`Не верная сумма! не хватает: ${findedCar.price - paying}`)
         } else if (paying > findedCar.price) {
             alert(`Поздравляем с покупкой! ваша здача: ${paying - findedCar.price}`)
         }
