@@ -1,728 +1,279 @@
-// let admin = "jhon" 
-// let name = "jhon"
-
-// console.log (admin)
-
-
-// // баланс
-// let balance = 25000
-
-// // траты
-// let car = 4480
-// let food = 890
-
-// // доходы
-// let invoice = 5500
-// let stock = 4200
-
-// // итоги
-// let totalBalance = balance-car-food+invoice+stock
-
-// console.log (totalBalance)
-
-
-
-// dz 3
-
-//  ex1
-// let str = "aaa@bbb@ccc"
-
-// str = str.split('@').join('!')
-
-// console.log(str)
-
-
-//     // ex2
-// let helloWorld = "HELLOWORLD"
-
-// helloWorld = helloWorld.charAt() + helloWorld.slice(1, 5).toLowerCase() + " " + helloWorld.slice(5).toLowerCase()
-
-// console.log(helloWorld)
-
-
-//     // ex3
-
-// let js = "Hello, it is HTML"
-
-// js = js.split('HTML').join('not JS')
-
-// console.log(js)
-
-
-//     // ex4
-
-// let ex4 = `let a = 'alex'`
-
-// ex4 = ex4.charAt().toUpperCase() + ex4.slice(1)
-
-// console.log(ex4)
-
-
-//     // ex 5
-
-
-//     // ex6
-
-// let alex = "Lex Luter has a big suit"
-
-// alex = alex.slice(alex.search('a'), alex.search('a') + 1).toUpperCase() + alex.slice(alex.search('Lex'), alex.search('Lex') + 3)
-
-// console.log(alex)
-
-
-
-
-// 14.10.23
-// ex1
-// let nameChet = prompt('Введите ваше имя!')
-
-// if(nameChet.length % 2 === 0) {
-//     alert('Добро Пожаловать!')
-// } else {
-//     alert('НЕТ, кто вам дал нечетное имя?')
-// }
-
-
-//     // ex2
-// let numChet = prompt('Введите число!')
-
-// if(numChet % 2 === 0) {
-//     alert('Четное!')
-// } else {
-//     alert('Нечетное!')
-// }
-
-
-//     // ex3
-// let nameCheck = prompt('Введите имя!')
-
-// if(nameCheck.charAt() === 'A' || nameCheck.charAt() === 'a') {
-//     alert('Добро Пожаловать!')
-// } else {
-//     alert('Нельзя! Имя должно начинаться на А/а')
-// }
-
-
-
-// 18.10.23
-// ex 1
-// let name = 'alex'
-// let money = 10000
-// let account = 7777
-
-// let namePr = prompt('Your name').toLowerCase().trim()
-
-// if(namePr === name) {
-//     alert('success')
-// } else {
-//     alert('user undefined')
-// }
-
-// let accountPr = +prompt('account number?')
-
-// if(accountPr === account) {
-//     alert('success')
-// } else {
-//     alert('wrong account')
-// }
-
-// let moneyPr = prompt('how much to cash out?')
-
-// if(moneyPr >=1 && moneyPr <=10000) {
-//     alert('success')
-// } else {
-//     alert('not enough money')
-// }
-// alert(moneyPr + " " + "Снято")
-// alert(money - moneyPr + " " + "Осталось")
-
-
-//     // ex 2 
-// let capacity = 10
-// let filled = 6
-// alert('6 filled')
-
-// let clubName = prompt('your name').toLowerCase().trim()
-// let age = +prompt('how old are u?')
-// let clubMoney = +prompt('how much money do you have')
-// let persons = prompt('how many persons?')
-
-// if(clubName.charAt() === 'a' &&
-//  age >=20 && age <=40 &&
-//  clubMoney >= 100 &&
-//  persons <=4) {
-//     alert('welcome')
-//  } else {
-//     alert('sorry, we cant let you into the club ')
-//  }
-
-// 22.10.23
-// ex1
-// let arr = ['alex', 'jordan', 'michael', 'amira', 'dilruh', 'alla', 'tangir', 'daler']
-
-// let evenNames = arr.filter((name) => name.length % 2 === 0)
-// let oddNames = arr.filter((name) => name.length % 2 !== 0)
-
-// console.log(evenNames)
-// console.log(oddNames)
-
-
-// ex2
-// let nums = [1,2,3,4,5,6,7,9]
-
-// let evenNums = []
-// let oddNums = []
-
-// evenNums.push(nums.filter((num) => num % 2 === 0))
-// oddNums.push(nums.filter((num) => num % 2 !== 0))
-
-// console.log(evenNums)
-// console.log(oddNums)
-
-// 25.10.23
-// ex1
-// let arr = ['hello', 1234, '', false, NaN, 123, true, ' ', null]
-
-// let trueElems = [arr.filter((elem => {
-//     return Boolean(elem)
-// }))]
-
-// console.log(trueElems)
-
-
-
-
-// 26.10.23
-// ex1
-// let cs2 = {
-//     name: "Counter-Strike 2",
-//     date: 2023,
-//     age: "1 month",
-//     engine: "Source 2",
-//     systemRequirements: {
-//         CPU: "Intel® Core™ i5-7500 / AMD Ryzen 5 1600.",
-//         GPU: "NVIDIA® GeForce® GTX 1650 4 ГБ / AMD Radeon RX 580.",
-//         RAM: "12 GB",
-//         OS: "windows 10/11 64-bit",
-//         MEMORY: "85 GB"
-//     },
-//     developer: "VALVE"
-// }
-
-// let miniObj = {
-//     privet: "privet",
-//     kakDela: "kak dela?",
-//     chtoDelaesh: "cho delaesh?",
-//     choEl: {
-//         kashu: "kashu",
-//         plov: "plov"
-//     }
-// }
-
-// let newObj = Object.assign({}, cs2, miniObj)
-
-// let newObjKeys = Object.keys(newObj)
-// let newObjValue = Object.values(newObj)//.concat(newObjKeys)
-
-// let KeyValConcat = newObjKeys.concat(newObjValue)
-
-// let types = {
-//     string: [],
-//     number: [],
-//     object: [],
-//     boolean: []
-// }
-
-// KeyValConcat.filter((elem) => {
-//     if(typeof elem === 'string') {
-//         types.string.push(elem)
-//     } else if(typeof elem === 'number') {
-//         types.number.push(elem)
-//     } else if(typeof elem === 'object') {
-//         types.object.push(elem)
-//     } else if(typeof elem === 'boolean') {
-//         types.boolean.push(elem)
-//     } 
-// })
-
-// console.log(types)
-
-
-
-//30.10.23
-//ex1
-
-// let team = [
-//     {
-//         name: 'Gradus',
-//         age: 14,
-//         role: 'tank',
-//         isMarried: false
-//     },
-
-//     {
-//         name: 'W1nn1e',
-//         age: 15,
-//         role: 'damage',
-//         isMarried: true
-//     },
-
-//     {
-//         name: 'Paradoxx',
-//         age: 15,
-//         role: 'damage',
-//         isMarried: true
-//     },
-
-//     {
-//         name: 'Fl1kyyy',
-//         age: 14,
-//         role: 'support',
-//         isMarried: false
-//     },
-
-//     {
-//         name: 'Marshmellouto',
-//         age: 15,
-//         role: 'support',
-//         isMarried: false
-
-//     }
-// ]
-// console.log(team)
-
-//     // ex2
-// let averageAge = 0
-
-// team.forEach(player => {
-//     averageAge += player.age
-// })
-
-// averageAge = averageAge / team.length
-
-// console.log('average age =', averageAge)
-
-//     // ex3
-// let Married = []
-// let Solo = []
-
-// team.forEach(player => {
-//     if(player.isMarried === true) {
-//         Married.push(player)
-//     } else {
-//         Solo.push(player)
-//     }
-// })
-
-// console.log('Married:', Married)
-// console.log('Solo:', Solo)
-
-
-
-// 01.11.23
-// ex1
-
-// let cars = [
-//     {
-//         model: "malibu",
-//         company: "general motors",
-//         color: "dry asphalt",
-//         engine: 2.4,
-//         price: 30000,
-//         beaten: false,
-//         year: 2022,
-//         mileage: 1000,
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2032,
-//         }
-//     },
-//     {
-//         model: "tracker",
-//         company: "general motors",
-//         color: "black",
-//         engine: "2.2",
-//         price: 22000,
-//         beaten: false,
-//         year: 2021,
-//         mileage: 2000,
-//         tech_passport: {
-//             date: 2021,
-//             exp_date: 3031
-//         }
-//     },
-//     {
-//         model: "gentra",
-//         company: "general motors",
-//         color: "black",
-//         engine: 1.5,
-//         price: 17000,
-//         beaten: false,
-//         year: 2021,
-//         mileage: 6000,
-//         tech_passport: {
-//             date: 2021,
-//             exp_date: 2031,
-//         }
-//     },
-//     {
-//         model: 'cobalt',
-//         company: 'general motors',
-//         engine: 1.5,
-//         price: 15000,
-//         beaten: true,
-//         year: 2022,
-//         mileage: 13000,
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2032,
-//         }
-
-//     },
-//     {
-//         model: 'Damas',
-//         company: 'Chevrolet',
-//         color: 'White',
-//         engine: 2.4,
-//         price: 10000,
-//         beaten: false,
-//         year: 2023,
-//         mileage: 100,
-//         tech_passport: {
-//             date: 2023,
-//             exp_date: 2033
-//         }
-//     },
-//     {
-//         model: "Spark",
-//         company: "general motors",
-//         color: "dirtygreen",
-//         engine: 1.250,
-//         price: 7000,
-//         beaten: true,
-//         year: 2008,
-//         mileage: 328000,
-//         tech_passport: {
-//             date: 2008,
-//             exp_date: 2023,
-//         }
-//     },
-//     {
-//         model: "bmw m5",
-//         engine: "бензиновыми двигателями рабочим объёмом 3453-4999 см3",
-//         year: 1998,
-//         beaten: false,
-//         price: 37000,
-//         color: "black",
-//         company: "BMW",
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2032,
-//         }
-
-//     },
-//     {
-//         model: "Labo",
-//         company: "GM ",
-//         color: "white",
-//         engine: 0.8,
-//         price: 10000,
-//         beaten: false,
-//         year: 2023,
-//         mileage: 0,
-//         tech_passport: {
-//             date: 2023,
-//             exp_date: 2033,
-//         }
-//     },
-//     {
-//         model: "tico",
-//         company: "daewoo",
-//         color: "black",
-//         engine: 1.5,
-//         price: 10000,
-//         beaten: true,
-//         year: 2010,
-//         mileage: 1000,
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2025,
-//         }
-//     },
-//     {
-//         model: 'traverse',
-//         company: 'chevrolet',
-//         color: 'black',
-//         engine: 3.6,
-//         price: 60000,
-//         beaten: false,
-//         year: 2023,
-//         mileage: 500,
-//         tech_passport: {
-//             date: 2023,
-//             exp_date: 2033
-//         }
-//     },
-//     {
-//         model: "volga",
-//         company: "uaz",
-//         color: "white",
-//         engine: 0.4,
-//         price: 700000,
-//         beaten: true,
-//         year: 1964,
-//         mileage: 3000000,
-//         tech_passport: {
-//             date: 1964,
-//             exp_date: 2023,
-//         }
-//     },
-//     {
-//         model: "ВАЗ 2106",
-//         company: "ВАЗ",
-//         color: "dry asphalt",
-//         engine: 1.5,
-//         price: 3000,
-//         beaten: true,
-//         year: 1995,
-//         mileage: 100000,
-//         tech_passport: {
-//             date: 1996,
-//             exp_date: 2026,
-//         }
-//     },
-//     {
-//         model: "velik",
-//         company: "Philips",
-//         color: "red",
-//         engine: "v12",
-//         price: 12000,
-//         beaten: false,
-//         year: 2009,
-//         mileage: 0,
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2032,
-//         }
-//     },
-//     {
-//         model: 'Tahoe',
-//         company: 'CHEVROLET',
-//         color: 'black',
-//         engine: 5.3,
-//         price: 110000,
-//         beaten: false,
-//         year: 2022,
-//         mileage: 0,
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2032
-//         }
-//     },
-//     {
-//         model: "Mercedes-Benz CLS",
-//         company: "Mercedes-Benz",
-//         color: "black",
-//         engine: 3.0,
-//         price: 110000,
-//         beaten: false,
-//         year: 2023,
-//         mileage: 200,
-//         tech_passport: {
-//             date: 2023,
-//             exp_date: 2033,
-//         }
-//     },
-//     {
-//         model: "malibu",
-//         company: "Chevrolet",
-//         color: "sky rim",
-//         engine: 2.4,
-//         price: 15000,
-//         year: 2022,
-//         beaten: false,
-//         mileage: 1500,
-//         tech_passport: {
-//             date: 2022,
-//             exp_date: 2054
-//         }
-//     },
-//     {
-//         model: "matiz",
-//         company: "general motors",
-//         color: "yellow",
-//         engine: 0.8,
-//         price: 4000,
-//         beaten: false,
-//         year: 2018,
-//         mileage: 5000,
-//         tech_passport: {
-//             date: 2018,
-//             exp_date: 2028,
-//         }
-//     },
-//     {
-//         model: "porter",
-//         company: "hyundai",
-//         color: "blue",
-//         engine: 2.5,
-//         price: 31000,
-//         beaten: false,
-//         year: 2023,
-//         mileage: 100,
-//         tech_passport: {
-//             date: 2023,
-//             exp_date: 2033,
-//         }
-//     },
-//     {
-//         year: 2023,
-//         price: 85000,
-//         engine: 6.5,
-//         mileage: 11.29,
-//         beaten: false,
-//         color: "black"
-//     }
-// ]
-
-
-// let from = prompt('from')
-// let up = prompt('up')
-
-
-// let result = []
-
-// cars.forEach(car => {
-//     if (car.price >= from && car.price <= up) {
-//         result.push(`model: ${car.model}, price: ${car.price} \n`)
-//     }
-// })
-
-
-// let oneOfThem = prompt('По вашей ценовой категории найдено вот эти машины ' + result + " Выберите один из этого списка написав название машины")
-
-
-// let findedCar = cars.find(car => car.model === oneOfThem)
-
-// let toBuy = confirm(
-//     `Model: ${findedCar.model} 
-//     Company: ${findedCar.company} 
-//     Color: ${findedCar.color} 
-//     Engine: ${findedCar.engine} 
-//     Beaten: ${findedCar.beaten} 
-//     Year: ${findedCar.year} 
-//     Mileage: ${findedCar.mileage} 
-//     Tech Passport: date ${findedCar.tech_passport.date + ' - ' + 'exp date ' + findedCar.tech_passport.exp_date}
-//     PRICE: ${findedCar.price}`
-// )
-
-// if (toBuy === true) {
-//     let paying = prompt('введите сумму, цена машины: ' + findedCar.price)
-//     if (paying == findedCar.price) {
-//         alert('Поздравляем с покупкой!')
-//     } else if (paying < findedCar.price) {
-//         alert(`Не верная сумма! не хватает: ${findedCar.price - paying}`)
-//     } else if (paying > findedCar.price) {
-//         alert(`Поздравляем с покупкой! ваша здача: ${paying - findedCar.price}`)
-//     }
-// }
-
-
-
-     // 03.11.23
-      // ex1
-
-// Отфильтровать задачи в переменные а и b
-// Сохранить количество в ключе count
-// Сохранить сами задачи в массиве-ключе arr
-let arr = [
+// 05.11.23
+    //ex1
+
+// Раскидать людей в разные массивы в зависимости от их почты
+let users = [
     {
-        "userId": 1,
         "id": 1,
-        "title": "delectus aut au`tem",
-        "completed": false
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
     },
     {
-        "userId": 1,
         "id": 2,
-        "title": "quis ut nam facilis et officia qui",
-        "completed": false
+        "name": "Ervin Howell",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv",
+        "address": {
+            "street": "Victor Plains",
+            "suite": "Suite 879",
+            "city": "Wisokyburgh",
+            "zipcode": "90566-7771",
+            "geo": {
+                "lat": "-43.9509",
+                "lng": "-34.4618"
+            }
+        },
+        "phone": "010-692-6593 x09125",
+        "website": "anastasia.net",
+        "company": {
+            "name": "Deckow-Crist",
+            "catchPhrase": "Proactive didactic contingency",
+            "bs": "synergize scalable supply-chains"
+        }
     },
     {
-        "userId": 1,
         "id": 3,
-        "title": "fugiat veniam minus",
-        "completed": false
+        "name": "Clementine Bauch",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net",
+        "address": {
+            "street": "Douglas Extension",
+            "suite": "Suite 847",
+            "city": "McKenziehaven",
+            "zipcode": "59590-4157",
+            "geo": {
+                "lat": "-68.6102",
+                "lng": "-47.0653"
+            }
+        },
+        "phone": "1-463-123-4447",
+        "website": "ramiro.info",
+        "company": {
+            "name": "Romaguera-Jacobson",
+            "catchPhrase": "Face to face bifurcated interface",
+            "bs": "e-enable strategic applications"
+        }
     },
     {
-        "userId": 1,
         "id": 4,
-        "title": "et porro tempora",
-        "completed":true
-             
+        "name": "Patricia Lebsack",
+        "username": "Karianne",
+        "email": "Julianne.OConner@kory.org",
+        "address": {
+            "street": "Hoeger Mall",
+            "suite": "Apt. 692",
+            "city": "South Elvis",
+            "zipcode": "53919-4257",
+            "geo": {
+                "lat": "29.4572",
+                "lng": "-164.2990"
+            }
+        },
+        "phone": "493-170-9623 x156",
+        "website": "kale.biz",
+        "company": {
+            "name": "Robel-Corkery",
+            "catchPhrase": "Multi-tiered zero tolerance productivity",
+            "bs": "transition cutting-edge web services"
+        }
     },
     {
-        "userId": 1,
         "id": 5,
-        "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-        "completed": false
+        "name": "Chelsey Dietrich",
+        "username": "Kamren",
+        "email": "Lucio_Hettinger@annie.ca",
+        "address": {
+            "street": "Skiles Walks",
+            "suite": "Suite 351",
+            "city": "Roscoeview",
+            "zipcode": "33263",
+            "geo": {
+                "lat": "-31.8129",
+                "lng": "62.5342"
+            }
+        },
+        "phone": "(254)954-1289",
+        "website": "demarco.info",
+        "company": {
+            "name": "Keebler LLC",
+            "catchPhrase": "User-centric fault-tolerant solution",
+            "bs": "revolutionize end-to-end systems"
+        }
     },
     {
-        "userId": 1,
         "id": 6,
-        "title": "qui ullam ratione quibusdam voluptatem quia omnis",
-        "completed": false
+        "name": "Mrs. Dennis Schulist",
+        "username": "Leopoldo_Corkery",
+        "email": "Karley_Dach@jasper.info",
+        "address": {
+            "street": "Norberto Crossing",
+            "suite": "Apt. 950",
+            "city": "South Christy",
+            "zipcode": "23505-1337",
+            "geo": {
+                "lat": "-71.4197",
+                "lng": "71.7478"
+            }
+        },
+        "phone": "1-477-935-8478 x6430",
+        "website": "ola.org",
+        "company": {
+            "name": "Considine-Lockman",
+            "catchPhrase": "Synchronised bottom-line interface",
+            "bs": "e-enable innovative applications"
+        }
     },
     {
-        "userId": 1,
         "id": 7,
-        "title": "illo expedita consequatur quia in",
-        "completed": false
+        "name": "Kurtis Weissnat",
+        "username": "Elwyn.Skiles",
+        "email": "Telly.Hoeger@billy.biz",
+        "address": {
+            "street": "Rex Trail",
+            "suite": "Suite 280",
+            "city": "Howemouth",
+            "zipcode": "58804-1099",
+            "geo": {
+                "lat": "24.8918",
+                "lng": "21.8984"
+            }
+        },
+        "phone": "210.067.6132",
+        "website": "elvis.io",
+        "company": {
+            "name": "Johns Group",
+            "catchPhrase": "Configurable multimedia task-force",
+            "bs": "generate enterprise e-tailers"
+        }
     },
     {
-        "userId": 1,
         "id": 8,
-        "title": "quo adipisci enim quam ut ab",
-        "completed": true
+        "name": "Nicholas Runolfsdottir V",
+        "username": "Maxime_Nienow",
+        "email": "Sherwood@rosamond.me",
+        "address": {
+            "street": "Ellsworth Summit",
+            "suite": "Suite 729",
+            "city": "Aliyaview",
+            "zipcode": "45169",
+            "geo": {
+                "lat": "-14.3990",
+                "lng": "-120.7677"
+            }
+        },
+        "phone": "586.493.6943 x140",
+        "website": "jacynthe.com",
+        "company": {
+            "name": "Abernathy Group",
+            "catchPhrase": "Implemented secondary concept",
+            "bs": "e-enable extensible e-tailers"
+        }
     },
     {
-        "userId": 1,
-
         "id": 9,
-        "title": "molestiae perspiciatis ipsa",
-        "completed": false
+        "name": "Glenna Reichert",
+        "username": "Delphine",
+        "email": "Chaim_McDermott@dana.io",
+        "address": {
+            "street": "Dayna Park",
+            "suite": "Suite 449",
+            "city": "Bartholomebury",
+            "zipcode": "76495-3109",
+            "geo": {
+                "lat": "24.6463",
+                "lng": "-168.8889"
+            }
+        },
+        "phone": "(775)976-6794 x41206",
+        "website": "conrad.com",
+        "company": {
+            "name": "Yost and Sons",
+            "catchPhrase": "Switchable contextually-based project",
+            "bs": "aggregate real-time technologies"
+        }
     },
     {
-        "userId": 1,
         "id": 10,
-        "title": "illo est ratione doloremque quia maiores aut",
-        "completed": true
-    },
+        "name": "Clementina DuBuque",
+        "username": "Moriah.Stanton",
+        "email": "Rey.Padberg@karina.biz",
+        "address": {
+            "street": "Kattie Turnpike",
+            "suite": "Suite 198",
+            "city": "Lebsackbury",
+            "zipcode": "31428-2261",
+            "geo": {
+                "lat": "-38.2386",
+                "lng": "57.2232"
+            }
+        },
+        "phone": "024-648-3804",
+        "website": "ambrose.net",
+        "company": {
+            "name": "Hoeger LLC",
+            "catchPhrase": "Centralized empowering task-force",
+            "bs": "target end-to-end models"
+        }
+    }
 ]
-let a = {
-    count: 0,
-    arr: []
+let emails = {
+    org: [],
+    net: [],
+    info: []
+}
+let other = []
+
+    // for of 
+
+// for(let user of users) {
+//     if(user.email.includes('.org')) {
+//         emails.org.push(user)
+//     } else if(user.email.includes('.net')) {
+//         emails.net.push(user)
+//     } else if(user.email.includes('.info')) {
+//         emails.info.push(user)
+//     } else {
+//         other.push(user)
+//     }
+// }
+
+// console.log('org, net, info : ', emails)
+// console.log('other emails : ', other)
+
+
+    // for
+
+for(let i = 0; i < users.length; i++) {
+    if(users[i].email.includes('.org')) {
+        emails.org.push(users[i])
+    } else if(users[i].email.includes('.net')) {
+        emails.net.push(users[i])
+    } else if(users[i].email.includes('.info')) {
+        emails.info.push(users[i])
+    } else {
+        other.push(users[i])
+    }
 }
 
-let b = {
-    count: 0,
-    arr: []
-} 
-
-arr.forEach(user => {
-    if(user.completed === true) {
-        a.arr.push(user)
-    } else {
-        b.arr.push(user)
-    }
-})
-
-a.count = a.arr.length
-b.count = b.arr.length
-
-
-
-
-
+console.log('org, net, info : ', emails)
+console.log('other emails : ', other)
 
 
