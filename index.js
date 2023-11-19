@@ -1,119 +1,93 @@
-let companies = [
-    {
-        id: Math.random(),
-        name: "wepro",
-        tax: 12,
-        budget: 10000,
-        expensesPerYear: [4000, 2000, 3000] 
-    },
-    {
-        id: Math.random(),
-        name: 'Allayor',
-        tax: 12,
-        budget: 200,
-        expensesPerYear: [150, 300, 700]
-    },
-    {
-        id: Math.random(),
-        name: "Daler-Xrust",
-        tax: 10,
-        budget: 50000,
-        expensesPerYear: [12000, 20000, 5000]
-    },
-    {
-        id: Math.random(),
-        name: 'Luchshiy Productoviy',
-        tax: 20,
-        budget: 23000,
-        expensesPerYear: [2000, 1000, 5000]
-    },
-    {
-        id: Math.random(),
-        name: "dilrukh salon",
-        tax: 4,
-        budget: 32000,
-        expensesPerYear: [12000, 10000, 10000]
-    },
-    {
-        id: Math.random(),
-        name: "Necromantiya",
-        tax: 10,
-        budget: 30000,
-        expensesPerYear: [1200,3444,4666]
-    },
-    {
-        id:Math.random(),
-        name:'Artyomida.uz',
-        tax:15,
-        budget:100000,
-        expensesPerYear:[10000,3000,90000]
-    },
-    {
-        id: Math.random(),
-        name: "bmw",
-        tax: 13, 
-        budget: 13000, 
-        expensesPerYear: [3000, 4000, 1000]
-    },
-    {
-        id: Math.random(),
-        name: "dizayner",
-        tax: 12,
-        budget: 20000,
-        expensesPerYear: [1000, 100, 200]
-    },
-    {
-        id:Math.random(),
-        name: 'Amerika_cherez_mexika',
-        tax: 0,
-        budget: 15000,
-        expensesPerYear: [100,4000]
-    },
-    {
-        id: Math.random(),
-        name: 'Gradus MMM',
-        tax: 12,
-        budget: 250000,
-        expensesPerYear: [20000, 50000, 15000]
-    },
-    {
-        id:Math.random(),
-        name:"Tangir Company",
-        tax: 100,
-        budget: 1000000,
-        expensesPerYear: [10000,12000,20000]
-    },
-    {
-        id: Math.random(),
-        name: "film_for_adults",
-        tax: 75,
-        budget: 50000,
-        expensesPerYear: [15000, 10000, 5000]
-    }
-]
-let unprofitable = []
-let zero = []
-let profitable = []
 
+// 19.11.23
+   // ex1
 
-for(let item of companies) {
-    item.expensesPerMonth = 0
-    for(let nums of item.expensesPerYear) {
-        item.expensesPerMonth += nums / 12
-    }
-    let taxSum = item.tax * (item.budget / 12) / 100
-    
-    item.total = Math.round((item.budget / 12) - (item.expensesPerMonth + taxSum))
-
-    if(item.total > 0) {
-        profitable.push(item)
-    } else if (item.total < 0 ) {
-        unprofitable.push(item)
-    } else {
-        zero.push(item)
+function checkAge(age) {
+    if(age >= 18) {
+        alert('welcome')
+    } else if(age > 0 && age < 18) {
+        alert('you are small')
+    } else if(age !== 'number' || age < 1) {
+        alert('goofball!')
     }
 }
 
-console.log('ПРИБЫЛЬНЫЕ: ', profitable)
-console.log('УБЫТОЧНЫЕ: ', unprofitable)
-console.log('В НОЛЬ: ', zero)
+checkAge(prompt('age'))
+
+
+
+    // ex2
+
+function maxName(name, name1, name2) {
+    let max = Math.max(name.length, name1.length, name2.length) 
+    if(name.length === max) {
+        alert(name)
+    } else if(name1.length === max) {
+        alert(name1)
+    } else if(name2.length === max) {
+        alert(name2)
+    }
+}
+
+maxName('alex', 'george', 'Michael')
+
+
+
+// ex3
+function min(a, b) {
+    if(a && b >= 1) {
+        alert(Math.min(a, b))
+    } else if(Array.isArray(a)) {
+
+        let minNumArr = a[0]
+
+        for(let i = 1; i < a.length; i++) {
+            if(a[i] < minNumArr) {
+                minNumArr = a[i]
+            }
+        }
+        alert(minNumArr)
+    } else if(typeof(a) === 'object') {
+
+        let arrForObj = Object.values(a)
+        let minNumArr1 = arrForObj[0]
+
+        for(let i = 1; i < arrForObj.length; i++) {
+            if(arrForObj[i] < minNumArr1) {
+                minNumArr1 = arrForObj[i]
+            }
+        }
+        alert(minNumArr1)
+
+    } else if(typeof(a) === 'object' && typeof(b) === 'object') {
+
+        let concat = Object.values(a)
+        let concat1 =  Object.values(b)
+        let arrForObj1 = concat.concat(concat1)
+
+        let minNumArr2 = arrForObj1[0]
+
+        for(let i = 1; i < arrForObj1.length; i++) {
+            if(arrForObj1[i] < minNumArr2) {
+                minNumArr2 = arrForObj1[i]
+            }
+        }
+        alert(minNumArr2)
+    }
+}
+min(1, 2)
+min([1, 2])
+min({a: 1, b: 2})
+min({a: 1, b: 2}, {a: 11, b: 12})
+
+
+
+// ex4
+
+function findProportion(total, broken) {
+    alert('total: ' + total + ' ' + 'broken: ' + broken + ' ' + '= ' + broken / total * 100 + '%')
+}
+
+findProportion(100000, 66666)
+
+
