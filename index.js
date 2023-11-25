@@ -1,40 +1,35 @@
-// 21.11.23
 
-function randomID(length) {
-    let ID = ''
-    let letters = 'qwertyuiopasdfghjklzxcvbnm1234567890'
-    for(let i = 0; i < length; i++) {
-        ID += letters.charAt(Math.round(Math.random() * letters.length))
+// 23.11.23
+
+function romainCalc(num) {
+
+  const romanNumerals = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1
+  };
+
+  let result = ""
+
+  for (let [key, value] of Object.entries(romanNumerals)) {
+    if(num >= value) {
+      result += key
+      num -= value
     }
-    alert(ID)
+  }
+
+  return result
 }
 
-randomID(10)
 
-
-
-// ex2
-
-function sortArray(arr) {
-    let sorted = false
-    while (sorted === false) {
-      sorted = true
-      for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-          let vremenniy = arr[i]
-          arr[i] = arr[i + 1]
-          arr[i + 1] = vremenniy
-          sorted = false
-        }
-      }
-    }
-    return arr
-  }
-  
-  
-  let sortedArr = sortArray([9,7,6,8,5,3,4])
-  console.log(sortedArr)
-  
-
-
-
+console.log(romainCalc(1994))
